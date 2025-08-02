@@ -1,33 +1,35 @@
-# Battleship
+# 🌟 Responsive Landing Page – Codveda Internship Level 1 Task
 
-## Link
-View Project's Live Preview [Here](https://battleship-game-jwqj.onrender.com)
+This is a **Level 1 task** submitted for the **Codveda Internship Program**. The goal was to design and develop a fully responsive landing page using **HTML**, **CSS**, and **JavaScript**, with modern web development practices like semantic HTML, Flexbox/Grid layout, and mobile-first responsiveness.
 
+---
 
-#
+## ✅ Task Requirements
 
-## Purpose
+- Build a responsive landing page
+- Use semantic HTML for better accessibility and SEO
+- Implement Flexbox or Grid for layout
+- Ensure mobile-first responsiveness using media queries
+- Include basic JavaScript for smooth scrolling
+- Add subtle animations for modern look
+- Include essential sections: Navigation bar, Hero, Features, Footer
 
-This Battleship project was part of my self-guided education through The Odin Project JS Curriculum. The intention of this was to practice the basics of testing using Jest, while also refining my skills with JavaScript.
+---
 
-Some of the challenges, aside from learning Jest, included using object-oriented paradigms alongside of Javascript state-management good practices. If I started this project again, I would devise a cleaner way of handling
- the state of the game either by making the object data completely immutable or making the game logic decoupled from the local react state by using context and reducer actions.
+## 💡 Features
 
-Another challenge was handling and rendering the SVG components correctly, in particular, flipping them for y-axis ship alignments.
+- Fully responsive layout (Mobile, Tablet, Desktop)
+- Semantic HTML structure
+- CSS Flexbox and Grid-based design
+- Smooth scrolling functionality
+- Basic animations on scroll and hover
+- Clean and modern user interface
+- Accessible and SEO-friendly structure
 
-Devising a clever algorithm for the AI to play like a human was the final challenge, and one that proved to take more time than I anticipated. However, it was probably the most fun and rewarding aspect of this project.
+---
 
-## Features:
+## 🧱 Technologies Used
 
-- Interactive browser-based game akin to the Hasbro&trade; board game.
-- Smart AI that plays similarly to a human
-- Satisfying naval sound effects and war music to pump you up
-
-## Demo Images
-
-![alt text](screenshot/home.jpg)
-
-![alt text](screenshot/page2.jpg)
-
-![alt text](screenshot/page3.jpg)
-
+- **HTML5** – Semantic and accessible structure
+- **CSS3** – Responsive design with Flexbox/Grid and animations
+- **JavaScript (Vanilla)** – Smooth scroll and basic interactivity
