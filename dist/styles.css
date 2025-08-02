@@ -99,7 +99,7 @@
         }
 
         .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('./capture.png') center/cover no-repeat;
+            background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('./images/capture.png') center/cover no-repeat;
             height: 100vh;
             display: flex;
             justify-content: center;

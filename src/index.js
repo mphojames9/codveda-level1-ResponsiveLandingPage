@@ -1,6 +1,19 @@
  
  const menuBtn = document.querySelector("#menuToggle");
-menuBtn.addEventListener("click", ()=> toggleMenu())
+ const sideMenuLinks = document.querySelectorAll(".side-menu-links");
+ const submitBtn = document.querySelector(".submitBtn");
+ 
+ 
+
+menuBtn.addEventListener("click", ()=> toggleMenu());
+sideMenuLinks.forEach(sideMenuLink => sideMenuLink.addEventListener("click", toggleMenu));
+submitBtn.addEventListener("submit", function handleSubmit(event) {
+            event.preventDefault();
+            const toast = document.getElementById('toast');
+            toast.textContent = 'Message sent successfully!';
+            toast.className = 'toast show';
+            setTimeout(() => toast.className = 'toast', 3000);
+        })
  
  function toggleMenu() {
             const menu = document.getElementById('sideMenu');
@@ -8,14 +21,6 @@ menuBtn.addEventListener("click", ()=> toggleMenu())
             const isOpen = menu.classList.contains('open');
             menu.classList.toggle('open');
             toggle.textContent = isOpen ? '☰' : '×';
-        }
-
-        function handleSubmit(event) {
-            event.preventDefault();
-            const toast = document.getElementById('toast');
-            toast.textContent = 'Message sent successfully!';
-            toast.className = 'toast show';
-            setTimeout(() => toast.className = 'toast', 3000);
         }
 
         window.onscroll = function () {

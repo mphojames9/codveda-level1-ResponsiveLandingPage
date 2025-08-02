@@ -26,10 +26,10 @@
             <div class="menu-btn" id="menuToggle">☰</div>
         </nav>
         <div class="side-menu" id="sideMenu">
-            <a href="#hero" onclick="toggleMenu()">Home</a>
-            <a href="#about" onclick="toggleMenu()">About</a>
-            <a href="#smartwatches" onclick="toggleMenu()">Smartwatches</a>
-            <a href="#contact" onclick="toggleMenu()">Contact</a>
+            <a class="side-menu-links" href="#hero" >Home</a>
+            <a class="side-menu-links" href="#about" >About</a>
+            <a class="side-menu-links" href="#smartwatches">Smartwatches</a>
+            <a class="side-menu-links" href="#contact">Contact</a>
         </div>
     </header>
 
@@ -58,28 +58,28 @@
 
         <section class="smartwatches fade-section" id="smartwatches">
             <div class="watch fade-section">
-                <img src="watch1.png" alt="Smartwatch 1">
+                <img src="./images/watch1.png" alt="Smartwatch 1">
                 <h3>VedaWatch One</h3>
                 <div class="price">$199</div>
                 <div class="rating">★★★★☆</div>
                 <p>Monitors heart rate and detects sudden falls in real-time.</p>
             </div>
             <div class="watch fade-section">
-                <img src="watch2.png" alt="Smartwatch 2">
+                <img src="./images/watch2.png" alt="Smartwatch 2">
                 <h3>VedaWatch Pro</h3>
                 <div class="price">$299</div>
                 <div class="rating">★★★★★</div>
                 <p>Advanced sensors for physical stress detection with GPS tracking.</p>
             </div>
             <div class="watch fade-section">
-                <img src="watch1.png" alt="Smartwatch 1">
+                <img src="./images/watch1.png" alt="Smartwatch 1">
                 <h3>VedaWatch Max</h3>
                 <div class="price">$199</div>
                 <div class="rating">★★★★☆</div>
                 <p>racks heart health and responds instantly to physical distress</p>
             </div>
             <div class="watch fade-section">
-                <img src="watch3.png" alt="Smartwatch 2">
+                <img src="./images/watch3.png" alt="Smartwatch 2">
                 <h3>VedaWatch Lite</h3>
                 <div class="price">$299</div>
                 <div class="rating">★★★★★</div>
@@ -114,7 +114,7 @@
 
         <section class="contact fade-section" id="contact">
             <h2 class="fade-section">Contact Us</h2>
-            <form onsubmit="handleSubmit(event)">
+            <form class="submitBtn" >
                 <input type="text" placeholder="Your Name" required>
                 <input type="email" placeholder="Your Email" required>
                 <textarea placeholder="Your Message" required></textarea>
