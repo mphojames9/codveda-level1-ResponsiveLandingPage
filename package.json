@@ -1,8 +1,9 @@
 {
   "name": "codveda-level1-responsivelandingpage",
   "version": "1.0.0",
-  "description": "This is a **Level 1 task** submitted for the **Codveda Internship Program**. The goal was to design and develop a fully responsive landing page using **HTML**, **CSS**, and **JavaScript**, with modern web development practices like semantic HTML, Flexbox/Grid layout, and mobile-first responsiveness.",
+  "description": "This is a Level 1 task submitted for the Codveda Internship Program. The goal was to design and develop a fully responsive landing page using HTML, CSS, and JavaScript, with modern web development practices like semantic HTML, Flexbox/Grid layout, and mobile-first responsiveness.",
   "main": "index.js",
+  "homepage": "https://mphojames9.github.io/codveda-level1-responsivelandingpage",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
