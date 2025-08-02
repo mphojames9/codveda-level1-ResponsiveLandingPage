@@ -1,4 +1,8 @@
-        function toggleMenu() {
+ 
+ const menuBtn = document.querySelector("#menuToggle");
+menuBtn.addEventListener("click", ()=> toggleMenu())
+ 
+ function toggleMenu() {
             const menu = document.getElementById('sideMenu');
             const toggle = document.getElementById('menuToggle');
             const isOpen = menu.classList.contains('open');
@@ -6,7 +10,7 @@
             toggle.textContent = isOpen ? '☰' : '×';
         }
 
-                function handleSubmit(event) {
+        function handleSubmit(event) {
             event.preventDefault();
             const toast = document.getElementById('toast');
             toast.textContent = 'Message sent successfully!';
@@ -50,10 +54,10 @@
             }
         });
     }, {
-        threshold: 0.2 
+        threshold: 0.2 // Trigger when 20% of element is visible
     });
 
-
+    // Target all elements with fade-section class
     document.querySelectorAll('.fade-section').forEach(el => {
         observer.observe(el);
     });
@@ -64,8 +68,10 @@ const header = document.querySelector('header');
 
 window.addEventListener('scroll', () => {
     if (window.scrollY > lastScrollY && window.scrollY > 100) {
+        // Scrolling down
         header.classList.add('hide');
     } else {
+        // Scrolling up
         header.classList.remove('hide');
     }
     lastScrollY = window.scrollY;
