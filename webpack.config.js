@@ -5,21 +5,5 @@ module.exports = {
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
-    publicPath: '', 
-    clean: true,
-  },
-  mode: 'development',
-  devServer: {
-    static: './dist',
-    open: true,
-  },
-  module: {
-    rules: [
-      {
-        test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
-      },
-    ],
   },
 };
-

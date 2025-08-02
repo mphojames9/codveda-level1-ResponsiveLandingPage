@@ -1,26 +1,26 @@
 {
-  "name": "codveda-level1-responsivelandingpage",
+  "name": "weather-app",
   "version": "1.0.0",
-  "description": "This is a Level 1 task submitted for the Codveda Internship Program. The goal was to design and develop a fully responsive landing page using HTML, CSS, and JavaScript, with modern web development practices like semantic HTML, Flexbox/Grid layout, and mobile-first responsiveness.",
+  "description": "",
   "main": "index.js",
-  "homepage": "https://mphojames9.github.io/codveda-level1-responsivelandingpage",
+  "homepage": "http://mphojames9.github.io/codveda-level1-responsivelandingpage",
+  "repository": {
+    "type": "git",
+    "url": "git+https://mphojames9.github.io/codveda-level1-responsivelandingpage/"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
-    "clean-deploy": "npm run build && gh-pages -d dist --git \"git --work-tree dist --dir-cache .gh-pages-cache\"",
-    "start": "webpack serve"
+    "deploy": "gh-pages -d dist"
   },
-  "keywords": [],
   "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "css-loader": "^7.1.2",
-    "gh-pages": "^6.3.0",
-    "style-loader": "^4.0.0",
-    "webpack": "^5.101.0",
-    "webpack-cli": "^6.0.1",
-    "webpack-dev-server": "^5.2.2"
-  }
+  "license": "ISC"
 }
