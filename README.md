@@ -33,3 +33,7 @@ This is a **Level 1 task** submitted for the **Codveda Internship Program**. The
 - **HTML5** – Semantic and accessible structure
 - **CSS3** – Responsive design with Flexbox/Grid and animations
 - **JavaScript (Vanilla)** – Smooth scroll and basic interactivity
+
+## 🚀 Live Demo
+
+[👉 View Live Site](https://landing-page-w2j8.onrender.com/)
