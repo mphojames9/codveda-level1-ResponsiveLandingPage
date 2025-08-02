@@ -9,6 +9,7 @@
     "build": "webpack",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
+    "clean-deploy": "npm run build && gh-pages -d dist --git \"git --work-tree dist --dir-cache .gh-pages-cache\"",
     "start": "webpack serve"
   },
   "keywords": [],
