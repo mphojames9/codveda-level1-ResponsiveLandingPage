@@ -7,13 +7,37 @@
 
 menuBtn.addEventListener("click", ()=> toggleMenu());
 sideMenuLinks.forEach(sideMenuLink => sideMenuLink.addEventListener("click", toggleMenu));
-submitBtn.addEventListener("submit", function handleSubmit(event) {
-            event.preventDefault();
-            const toast = document.getElementById('toast');
-            toast.textContent = 'Message sent successfully!';
-            toast.className = 'toast show';
-            setTimeout(() => toast.className = 'toast', 3000);
-        })
+const contactForm = document.querySelector('#contactForm'); 
+
+contactForm.addEventListener("submit", function(event) {
+    event.preventDefault();
+    const toast = document.getElementById('toast');
+    const form = event.target;
+    let isSuccessful = true; // In a real app, this would be determined by a server response or validation
+
+    // Simulate validation
+    const name = form.querySelector('input[type="text"]').value;
+    const email = form.querySelector('input[type="email"]').value;
+
+    if (name.length < 4 || email.length < 5) {
+        isSuccessful = false;
+    }
+
+    if (isSuccessful) {
+        // Successful submission logic
+        toast.textContent = 'Message sent successfully!';
+        toast.className = 'toast show success'; // Add the 'success' class
+        form.reset(); // Reset the form only on success
+    } else {
+        // Error submission logic
+        toast.textContent = 'Please fill out all fields correctly.';
+        toast.className = 'toast show error'; 
+    }
+
+    setTimeout(() => {
+        toast.className = 'toast';
+    }, 3000);
+});
  
  function toggleMenu() {
             const menu = document.getElementById('sideMenu');
